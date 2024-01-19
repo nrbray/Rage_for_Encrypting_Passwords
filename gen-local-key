@@ -1,0 +1,2 @@
+# nix shell nixpkgs#{rage}
+rage-keygen  | tee /tmp/local-key | rg '# public key: age.*' | cut -d " " -f4 >> recipients-file; rage /tmp/local-key --armor --passphrase --output local-key; rm /tmp/local-key

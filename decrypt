@@ -1,0 +1,2 @@
+# nix shell nixpkgs#{rage,xclip}
+rage --decrypt --identity local-key encrypted  | xclip -selection c

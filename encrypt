@@ -1,0 +1,2 @@
+# nix shell nixpkgs#{rage}
+rage --encrypt --recipients-file ./recipients-file --armor <(read -s -p  ">" password; echo "${password}" | tr -d "\n") --output encrypted
